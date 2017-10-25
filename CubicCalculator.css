@@ -17,7 +17,8 @@ h1 {
   justify-content: center;
   flex-wrap: wrap; }
   .contain section {
-    width: 40%;
+    width: 48%;
+    max-width: 640px;
     margin: 0 10px 10px 10px;
     padding: 0; }
     .contain section table {
@@ -55,8 +56,74 @@ h1 {
           white-space: normal; }
   .contain #result {
     display: flex;
-    justify-content: space-around;
-    width: 80%; }
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px; }
+    .contain #result div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2px 12px;
+      background-color: RGB(190, 7, 18);
+      width: 30%;
+      border: 2px solid black;
+      color: white;
+      height: 30px; }
+      .contain #result div h3 {
+        font-size: 14px;
+        margin: 0; }
+      .contain #result div input {
+        width: 20%;
+        background-color: inherit;
+        border: none;
+        color: white;
+        text-align: center;
+        font-weight: bold; }
+
+@media screen and (max-width: 1023px) {
+  .contain section {
+    width: 90%;
+    max-width: none;
+    margin: 0 10px 10px 10px;
+    padding: 0; }
+    .contain section table {
+      border: 2px solid black;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      table-layout: fixed;
+      width: 100%; }
+      .contain section table tr {
+        height: 20px; }
+        .contain section table tr td {
+          border-left: 1px solid black; }
+          .contain section table tr td input {
+            text-align: center;
+            background-color: inherit;
+            border: none;
+            width: 100%; }
+          .contain section table tr td input::-webkit-outer-spin-button,
+          .contain section table tr td input::-webkit-inner-spin-button {
+            -webkit-appearance: none; }
+      .contain section table td:first-child {
+        padding-left: 10px; }
+      .contain section table tr:first-child {
+        background: RGB(229, 184, 184);
+        text-align: center;
+        font-size: 14px;
+        border: 2px solid black; }
+        .contain section table tr:first-child td:not(:last-child) {
+          white-space: nowrap;
+          width: 15%; }
+        .contain section table tr:first-child td:first-child {
+          background: RGB(190, 7, 18);
+          color: RGB(255, 255, 255);
+          width: 50%;
+          white-space: normal; }
+  .contain #result {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1024px; }
     .contain #result div {
       display: flex;
       justify-content: space-between;
@@ -66,11 +133,83 @@ h1 {
       border: 2px solid black;
       color: white;
       height: 30px; }
+      .contain #result div h3 {
+        font-size: 14px;
+        margin: 0; }
       .contain #result div input {
+        width: 20%;
         background-color: inherit;
         border: none;
         color: white;
         text-align: center;
-        font-weight: bold; }
+        font-weight: bold; } }
+@media screen and (max-width: 413px) {
+  .container-fluid {
+    padding: 0; }
+    .container-fluid div {
+      padding-left: 0; }
+
+  .contain section {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    .contain section table {
+      border: 2px solid black;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      table-layout: fixed;
+      width: 100%; }
+      .contain section table tr {
+        height: 20px; }
+        .contain section table tr td {
+          border-left: 1px solid black; }
+          .contain section table tr td input {
+            text-align: center;
+            background-color: inherit;
+            border: none;
+            width: 100%; }
+          .contain section table tr td input::-webkit-outer-spin-button,
+          .contain section table tr td input::-webkit-inner-spin-button {
+            -webkit-appearance: none; }
+      .contain section table td:first-child {
+        padding-left: 5px; }
+      .contain section table tr:first-child {
+        background-color: RGB(229, 184, 184);
+        text-align: center;
+        font-size: 9px;
+        border: 2px solid black; }
+        .contain section table tr:first-child td:not(:last-child) {
+          white-space: nowrap;
+          width: 15%; }
+        .contain section table tr:first-child td:first-child {
+          background-color: RGB(190, 7, 18);
+          color: RGB(255, 255, 255);
+          width: 50%;
+          white-space: normal; }
+  .contain #result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+    .contain #result div {
+      display: flex;
+      justify-content: space-between;
+      padding: 2px 12px;
+      margin-bottom: 10px;
+      background-color: RGB(190, 7, 18);
+      width: 90%;
+      border: 2px solid black;
+      color: white;
+      height: 30px; }
+      .contain #result div h3 {
+        font-size: 10px;
+        margin: 0; }
+      .contain #result div input {
+        width: 20%;
+        background-color: inherit;
+        border: none;
+        color: white;
+        text-align: center;
+        font-weight: bold; } }
 
 /*# sourceMappingURL=CubicCalculator.css.map */
